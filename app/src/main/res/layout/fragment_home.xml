@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eagledeveloper.svhems.ui.fragments.HomeFragment">
+
+   <ImageView
+       android:id="@+id/ivLogo"
+       android:layout_width="150sp"
+       android:layout_height="150sp"
+       android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/kauf_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dr_kauf"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_one"
+            android:layout_marginLeft="30sp"
+            android:textSize="17sp"
+            android:textColor="@color/sky"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_one"
+        android:layout_width="270sp"
+        android:layout_height="3sp"
+        android:background="@color/sky"
+        android:layout_below="@id/kauf_layout"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="4sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/board"
+        android:layout_below="@id/line_one"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="2sp"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/guardner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line_one"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="35sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dr_guard"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_one"
+            android:layout_marginLeft="30sp"
+            android:textSize="17sp"
+            android:textColor="@color/sky"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_two"
+        android:layout_width="270sp"
+        android:layout_height="3sp"
+        android:background="@color/sky"
+        android:layout_below="@id/guardner_layout"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="4sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ems_medicle"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="2sp"
+        android:layout_below="@id/line_two"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/heli_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/guardner_layout"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="35sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dr_guard"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_one"
+            android:textSize="17sp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="@color/sky"
+            android:layout_marginLeft="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_three"
+        android:layout_width="270sp"
+        android:layout_height="3sp"
+        android:background="@color/sky"
+        android:layout_below="@id/heli_layout"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="4sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ems_medicle"
+        android:layout_below="@id/line_three"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="2sp"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btn_ems_protocols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttone_text"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sky"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"/>
+
+
+</RelativeLayout>
