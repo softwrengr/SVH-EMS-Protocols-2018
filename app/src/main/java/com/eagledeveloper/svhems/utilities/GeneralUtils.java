@@ -1,6 +1,8 @@
 package com.eagledeveloper.svhems.utilities;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
@@ -22,4 +24,6 @@ public class GeneralUtils {
         ((AppCompatActivity)activity).getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,fragment).addToBackStack("abc").commit();
         return fragment;
     }
+
+
 }

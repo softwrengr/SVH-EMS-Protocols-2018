@@ -68,7 +68,7 @@ public class PDFFragment extends Fragment {
                     @Override
                     public void setPageNum(int pageNum) {
 
-                        tvPageNumber.setText(String.valueOf(pageNum));
+                        tvPageNumber.setText("page "+String.valueOf(pageNum));
                     }
 
                     @Override

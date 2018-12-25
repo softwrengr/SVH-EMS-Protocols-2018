@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GeneralUtils.connectFragment(this, new PDFFragment());
+        GeneralUtils.connectFragment(this, new HomeFragment());
     }
 }
