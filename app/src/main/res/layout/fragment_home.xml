@@ -64,6 +64,13 @@
             android:background="@color/sky"
             android:layout_below="@id/dr_kauf_no"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/board"
+            android:textSize="12sp"
+            android:layout_below="@id/line_one"/>
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -115,6 +122,13 @@
             android:background="@color/sky"
             android:layout_below="@id/dr_guardner_no"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ems_medicle"
+            android:textSize="12sp"
+            android:layout_below="@id/line_two"/>
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -164,6 +178,13 @@
             android:layout_marginTop="4sp"
             android:background="@color/sky"
             android:layout_below="@id/tv_emergency"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emergency"
+            android:textSize="12sp"
+            android:layout_below="@id/line_three"/>
 
     </RelativeLayout>
 
