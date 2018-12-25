@@ -4,9 +4,19 @@
     android:layout_height="match_parent"
     tools:context="com.eagledeveloper.svhems.ui.fragments.PDFFragment">
 
+
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_page_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="page number" />
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.eagledeveloper.svhems.R;
 import com.eagledeveloper.svhems.ui.fragments.HomeFragment;
+import com.eagledeveloper.svhems.ui.fragments.PDFFragment;
 import com.eagledeveloper.svhems.utilities.GeneralUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GeneralUtils.connectFragment(this, new HomeFragment());
+        GeneralUtils.connectFragment(this, new PDFFragment());
     }
 }
