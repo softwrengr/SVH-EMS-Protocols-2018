@@ -47,7 +47,9 @@ public class PDFFragment extends Fragment {
                 .swipeHorizontal(true)
                 .enableDoubletap(true)
                 .defaultPage(0)
-                .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
+                .enableSwipe(true)
+
+                .enableAnnotationRendering(true) // render annotations (such as comments, colors or forms)
                 .password(null)
                 .scrollHandle(new ScrollHandle() {
                     @Override
