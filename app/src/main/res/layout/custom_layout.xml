@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="150sp"
-    android:layout_height="150sp"
-    android:padding="10sp"
-    android:background="@color/colorAccent">
+    android:layout_height="180sp"
+    android:padding="5sp"
+    android:background="@drawable/black_boundry">
 
-</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/gv_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/pdfView2" />
+    </LinearLayout>
+
+</RelativeLayout>

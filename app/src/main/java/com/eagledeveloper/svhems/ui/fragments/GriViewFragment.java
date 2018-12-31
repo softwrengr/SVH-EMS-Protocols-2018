@@ -27,38 +27,31 @@ public class GriViewFragment extends Fragment {
     private View parentView;
     @BindView(R.id.gridview_images)
     GridView gridView;
-    List<DataModel> list;
-
-
-    public GriViewFragment() {
-        // Required empty public constructor
-    }
+    ArrayList<DataModel> list;
+    GridAdapter adapter;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         parentView = inflater.inflate(R.layout.fragment_gri_view, container, false);
-
-
         ButterKnife.bind(this, parentView);
+        initUI();
+        return parentView;
+    }
 
-        List<DataModel> list = new ArrayList<>();
+    private void initUI() {
+        list = new ArrayList<>();
+        adapter = new GridAdapter(getActivity(), list);
+        gridView.setAdapter(adapter);
 
         DataModel dataModel = new DataModel();
         for (int i = 1; i <= 146; i++) {
-
-
-            Log.d("id_pages",String.valueOf(i));
             dataModel.setPage_id(i);
             list.add(dataModel);
-
+            adapter.notifyDataSetChanged();
         }
 
-        gridView.setAdapter(new GridAdapter(getActivity(), R.layout.custom_layout, list));
 
-
-
-        return parentView;
     }
 
 }

@@ -66,24 +66,6 @@ public class PDFFragment extends Fragment {
         initUI();
 
         ButterKnife.bind(this, view);
-//
-//        int pageNumber = 0;
-//        PdfiumCore pdfiumCore = new PdfiumCore(getActivity());
-//        try {
-//            //http://www.programcreek.com/java-api-examples/index.php?api=android.os.ParcelFileDescriptor
-//            ParcelFileDescriptor fd = getActivity().getContentResolver().openAssetFileDescriptor()
-//            PdfDocument pdfDocument = pdfiumCore.newDocument(fd);
-//            pdfiumCore.openPage(pdfDocument, pageNumber);
-//            int width = pdfiumCore.getPageWidthPoint(pdfDocument, pageNumber);
-//            int height = pdfiumCore.getPageHeightPoint(pdfDocument, pageNumber);
-//            Bitmap bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-//            pdfiumCore.renderPageBitmap(pdfDocument, bmp, pageNumber, 0, 0, width, height);
-//            saveImage(bmp);
-//            pdfiumCore.closeDocument(pdfDocument); // important!
-//        } catch(Exception e) {
-//            //todo with exception
-//        }
-
 
 
         pdfView1.fromAsset("pdf.pdf")
