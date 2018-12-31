@@ -49,6 +49,14 @@ public class GridAdapter extends ArrayAdapter {
             row.setTag(holder);
         } else {
             holder = (ViewHolder) row.getTag();
+//            holder.pdfView.fromAsset("pdf.pdf")
+//                    .enableSwipe(true) // allows to block changing pages using swipe
+//                    .swipeHorizontal(true)
+//                    .enableDoubletap(true)
+//                    .enableSwipe(true)
+//                    .enableAnnotationRendering(true) // render annotations (such as comments, colors or forms)
+//                    .password(null)
+//                    .load();
 
         }
 
