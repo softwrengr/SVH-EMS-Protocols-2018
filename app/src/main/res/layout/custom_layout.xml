@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layout"
     android:layout_width="150sp"
-    android:layout_height="180sp"
+    android:layout_height="wrap_content"
     android:background="@drawable/black_boundry"
     android:orientation="vertical"
-    android:padding="5sp">
+    android:padding="3sp">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="180sp">
 
         <com.github.barteksc.pdfviewer.PDFView
             android:id="@+id/gv_pdf"
@@ -30,5 +30,14 @@
 
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_page_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:textSize="12sp"
+        android:text="page no"/>
+
 
 </LinearLayout>

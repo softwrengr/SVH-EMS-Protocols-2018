@@ -58,7 +58,7 @@ public class GriViewFragment extends Fragment {
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.findItem(R.id.action_grid_view);
-        item.setVisible(false);
+        //item.setVisible(false);
     }
 
 

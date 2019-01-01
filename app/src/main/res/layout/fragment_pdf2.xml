@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eagledeveloper.svhems.ui.fragments.PdfFragment">
+
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/progress_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"/>
+
+
+    <TextView
+        android:id="@+id/page_number"
+        android:layout_width="100sp"
+        android:layout_height="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_alignParentRight="true"
+        android:text="page number"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

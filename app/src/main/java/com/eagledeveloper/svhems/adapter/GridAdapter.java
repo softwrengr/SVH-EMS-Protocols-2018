@@ -15,6 +15,8 @@ import com.eagledeveloper.svhems.ui.fragments.SinglePageViewFragment;
 import com.eagledeveloper.svhems.utilities.GeneralUtils;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
+import com.github.barteksc.pdfviewer.listener.OnPageErrorListener;
+import com.github.barteksc.pdfviewer.listener.OnPageScrollListener;
 
 import java.util.ArrayList;
 
@@ -62,6 +64,7 @@ public class GridAdapter extends BaseAdapter {
         convertView = layoutInflater.inflate(R.layout.custom_layout, parent, false);
         viewHolder.pdfView = convertView.findViewById(R.id.gv_pdf);
         viewHolder.tvPage = convertView.findViewById(R.id.tv_page);
+        viewHolder.tvPageNo = convertView.findViewById(R.id.tv_page_no);
 
         final View finalConvertView = convertView;
         viewHolder.pdfView.fromAsset("pdf.pdf")
@@ -83,7 +86,7 @@ public class GridAdapter extends BaseAdapter {
                 })
                 .load();
 
-
+        viewHolder.tvPageNo.setText("page "+String.valueOf(position+1));
         viewHolder.tvPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +104,6 @@ public class GridAdapter extends BaseAdapter {
     private class MyViewHolder {
         ImageView ivProgress;
         PDFView pdfView;
-        TextView tvPage;
+        TextView tvPage,tvPageNo;
     }
 }

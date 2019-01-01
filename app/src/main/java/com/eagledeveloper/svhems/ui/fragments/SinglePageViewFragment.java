@@ -28,7 +28,6 @@ public class SinglePageViewFragment extends Fragment {
     @BindView(R.id.pdfView)
     PDFView pdfView;
 
-
     @BindView(R.id.tv_page_number)
     TextView tvPageNumber;
 
@@ -115,13 +114,15 @@ public class SinglePageViewFragment extends Fragment {
                 .spacing(0)
                 .load();
 
+        pdfView.zoomTo(1);
+
 
     }
 
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.findItem(R.id.action_one_page_view);
-        item.setVisible(false);
+        //item.setVisible(false);
     }
 
 }
