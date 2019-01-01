@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
     android:layout_width="150sp"
     android:layout_height="180sp"
-    android:padding="5sp"
-    android:background="@drawable/black_boundry">
+    android:background="@drawable/black_boundry"
+    android:orientation="vertical"
+    android:padding="5sp">
 
-
-
-    <LinearLayout
-        android:id="@+id/layout"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <com.github.barteksc.pdfviewer.PDFView
             android:id="@+id/gv_pdf"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignTop="@+id/pdfView2" />
-    </LinearLayout>
+            android:layout_height="match_parent" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:src="@drawable/progress_animation"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

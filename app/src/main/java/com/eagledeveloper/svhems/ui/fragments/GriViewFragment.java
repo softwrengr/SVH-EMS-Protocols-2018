@@ -3,18 +3,18 @@ package com.eagledeveloper.svhems.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import com.eagledeveloper.svhems.DataModel;
-import com.eagledeveloper.svhems.GridAdapter;
+import com.eagledeveloper.svhems.model.DataModel;
+import com.eagledeveloper.svhems.adapter.GridAdapter;
 import com.eagledeveloper.svhems.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,6 +34,8 @@ public class GriViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         parentView = inflater.inflate(R.layout.fragment_gri_view, container, false);
+
+        setHasOptionsMenu(true);
         ButterKnife.bind(this, parentView);
         initUI();
         return parentView;
@@ -51,7 +53,13 @@ public class GriViewFragment extends Fragment {
             adapter.notifyDataSetChanged();
         }
 
-
     }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        MenuItem item = menu.findItem(R.id.action_grid_view);
+        item.setVisible(false);
+    }
+
 
 }

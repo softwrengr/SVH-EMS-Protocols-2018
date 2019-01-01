@@ -2,11 +2,14 @@ package com.eagledeveloper.svhems.ui.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.eagledeveloper.svhems.R;
 import com.eagledeveloper.svhems.ui.fragments.GriViewFragment;
 import com.eagledeveloper.svhems.ui.fragments.HomeFragment;
-import com.eagledeveloper.svhems.ui.fragments.PDFFragment;
+import com.eagledeveloper.svhems.ui.fragments.SinglePageViewFragment;
 import com.eagledeveloper.svhems.utilities.GeneralUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +19,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GeneralUtils.connectFragment(this, new GriViewFragment());
+        GeneralUtils.connectFragment(this, new HomeFragment());
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.grid_view, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+
+
+        if (item.getItemId() == android.R.id.home) {
+
+        }
+        switch (item.getItemId()) {
+            case R.id.action_grid_view:
+
+                GeneralUtils.connectFragmentWithBack(this, new GriViewFragment());
+
+                break;
+            case R.id.action_one_page_view:
+
+                GeneralUtils.connectFragmentWithBack(this, new SinglePageViewFragment());
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
+
 }
