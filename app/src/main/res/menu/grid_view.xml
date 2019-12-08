@@ -8,14 +8,14 @@
         android:id="@+id/action_one_page_view"
         android:icon="@drawable/open_pages"
         app:showAsAction="ifRoom"
-        android:title="Add Creditor">
+        android:title="list">
     </item>
 
     <item
         android:id="@+id/action_grid_view"
         android:icon="@drawable/grid_menu"
         app:showAsAction="ifRoom"
-        android:title="Add Creditor">
+        android:title="grid">
     </item>
 
 

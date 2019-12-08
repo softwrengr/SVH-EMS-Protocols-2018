@@ -1,15 +1,14 @@
 package com.eagledeveloper.svhems.ui.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.eagledeveloper.svhems.R;
 import com.eagledeveloper.svhems.ui.fragments.GriViewFragment;
 import com.eagledeveloper.svhems.ui.fragments.HomeFragment;
-import com.eagledeveloper.svhems.ui.fragments.SinglePageViewFragment;
+import com.eagledeveloper.svhems.ui.fragments.PdfFragment;
 import com.eagledeveloper.svhems.utilities.GeneralUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.action_one_page_view:
 
-                GeneralUtils.connectFragmentWithBack(this, new SinglePageViewFragment());
+                GeneralUtils.connectFragmentWithBack(this, new PdfFragment());
 
 
             default:

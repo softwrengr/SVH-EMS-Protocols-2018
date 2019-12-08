@@ -59,7 +59,7 @@
         <View
             android:id="@+id/line_one"
             android:layout_width="280sp"
-            android:layout_height="3sp"
+            android:layout_height="3dp"
             android:layout_marginTop="4sp"
             android:background="@color/sky"
             android:layout_below="@id/dr_kauf_no"/>
@@ -117,7 +117,7 @@
         <View
             android:id="@+id/line_two"
             android:layout_width="280sp"
-            android:layout_height="3sp"
+            android:layout_height="3dp"
             android:layout_marginTop="4sp"
             android:background="@color/sky"
             android:layout_below="@id/dr_guardner_no"/>
@@ -174,7 +174,7 @@
         <View
             android:id="@+id/line_three"
             android:layout_width="280sp"
-            android:layout_height="3sp"
+            android:layout_height="3dp"
             android:layout_marginTop="4sp"
             android:background="@color/sky"
             android:layout_below="@id/tv_emergency"/>
@@ -196,6 +196,6 @@
         android:layout_alignParentBottom="true"
         android:background="@color/sky"
         android:textColor="@color/white"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
 </RelativeLayout>

@@ -2,8 +2,10 @@ package com.eagledeveloper.svhems.ui.fragments;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,7 +45,7 @@ public class SinglePageViewFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_pdf, container, false);
         setHasOptionsMenu(true);
         initUI();
-
+        onback(view);
 
         return view;
     }
@@ -122,7 +124,23 @@ public class SinglePageViewFragment extends Fragment {
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.findItem(R.id.action_one_page_view);
-        //item.setVisible(false);
+        item.setVisible(false);
+    }
+
+    private void onback(View view) {
+        view.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                    GeneralUtils.connectFragment(getActivity(), new GriViewFragment());
+                    return true;
+                }
+                return false;
+            }
+        });
+
     }
 
 }
