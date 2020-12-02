@@ -2,6 +2,8 @@ package com.eagledeveloper.svhems.ui.fragments;
 
 
 import android.os.Bundle;
+
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import android.view.KeyEvent;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
+import com.eagledeveloper.svhems.databinding.FragmentGriViewBinding;
 import com.eagledeveloper.svhems.model.DataModel;
 import com.eagledeveloper.svhems.adapter.GridAdapter;
 import com.eagledeveloper.svhems.R;
@@ -19,39 +22,36 @@ import com.eagledeveloper.svhems.utilities.GeneralUtils;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class GriViewFragment extends Fragment {
 
-    private View parentView;
-    @BindView(R.id.gridview_images)
-    GridView gridView;
     ArrayList<DataModel> list;
     GridAdapter adapter;
+
+    private FragmentGriViewBinding binding;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView = inflater.inflate(R.layout.fragment_gri_view, container, false);
-
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_gri_view, container, false);
         setHasOptionsMenu(true);
-        ButterKnife.bind(this, parentView);
+
         initUI();
-        onback(parentView);
-        return parentView;
+
+        onback(binding.getRoot());
+        return binding.getRoot();
     }
 
     private void initUI() {
         list = new ArrayList<>();
         adapter = new GridAdapter(getActivity(), list);
-        gridView.setAdapter(adapter);
+        binding.gridviewImages.setAdapter(adapter);
 
         DataModel dataModel = new DataModel();
-        for (int i = 1; i <= 146; i++) {
+        for (int i = 1; i <= 168; i++) {
             dataModel.setPage_id(i);
             list.add(dataModel);
             adapter.notifyDataSetChanged();

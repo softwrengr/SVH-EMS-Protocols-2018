@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragments.GriViewFragment">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
         android:id="@+id/gridview_images"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnWidth="90dp"
-        android:padding="10sp"
-        android:horizontalSpacing="15dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/medium_margin"
+        android:horizontalSpacing="@dimen/standard_margin"
         android:numColumns="2"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="15dp" />
+        android:verticalSpacing="@dimen/standard_margin" />
 
 </FrameLayout>
+
+</layout>

@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">SVH EMS Protocols 2020</string>
+    <string name="app_name">SVH EMS Protocols 2021</string>
 
     <string name="dr_kauf">Dr.Kaufmann</string>
     <string name="dr_guard">Dr.Gardner</string>
+    <string name="ems_physcian">Board Certified EMS Physician</string>
 
     <string name="board">Board Certified EMS Physician</string>
     <string name="ems_medicle">EMS Medical Director</string>
@@ -13,4 +14,7 @@
     <string name="phone_three">+1-866-574-4633</string>
 
     <string name="buttone_text">EMS Protocols</string>
+    <string name="sure_call">Are you sure to call ?</string>
+    <string name="call">Call</string>
+    <string name="close">Close</string>
 </resources>

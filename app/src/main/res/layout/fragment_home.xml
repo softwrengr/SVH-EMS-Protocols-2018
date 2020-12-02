@@ -1,201 +1,210 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    tools:context="com.eagledeveloper.svhems.ui.fragments.HomeFragment">
-
-    <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:src="@drawable/logo" />
-
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
-        android:id="@+id/kauf_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ivLogo"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/dr_kauf"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"
-            android:text="@string/dr_kauf"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/dr_kauf_no"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30sp"
-            android:text="@string/phone_one"
-            android:textColor="@color/sky"
-            android:layout_toRightOf="@id/dr_kauf"
-            android:textSize="17sp"
-            android:textStyle="bold" />
+        android:background="@color/white">
 
         <ImageView
-            android:id="@+id/dr_kauf_call"
-            android:layout_width="40sp"
-            android:layout_height="40sp"
-            android:src="@drawable/call"
-            android:padding="8sp"
-            android:scaleType="fitXY"
-            android:background="@drawable/circle"
-            android:layout_toRightOf="@id/line_one" />
+            android:id="@+id/ivLogo"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
 
-        <View
-            android:id="@+id/line_one"
-            android:layout_width="280sp"
-            android:layout_height="3dp"
-            android:layout_marginTop="4sp"
-            android:background="@color/sky"
-            android:layout_below="@id/dr_kauf_no"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/kauf_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/board"
-            android:textSize="12sp"
-            android:layout_below="@id/line_one"/>
+            android:layout_below="@id/ivLogo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/dr_kauf"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="@string/dr_kauf"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dr_kauf_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_toStartOf="@id/dr_kauf_call"
+                android:layout_toRightOf="@id/dr_kauf"
+                android:text="@string/phone_one"
+                android:textColor="@color/sky"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dr_kauf_call"
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:layout_toRightOf="@id/line_one"
+                android:background="@drawable/circle"
+                android:padding="8sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call" />
+
+            <View
+                android:id="@+id/line_one"
+                android:layout_width="280dp"
+                android:layout_height="@dimen/line_size"
+                android:layout_below="@id/dr_kauf_no"
+                android:layout_marginTop="4sp"
+                android:background="@color/sky" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_one"
+                android:text="@string/board"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/guard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kauf_layout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dr_guardner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/ems_physcian"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dr_guardner_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_toStartOf="@id/dr_guardner_call"
+                android:text="@string/phone_two"
+                android:textColor="@color/sky"
+                android:textSize="@dimen/standard_margin"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dr_guardner_call"
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:layout_toRightOf="@id/line_two"
+                android:background="@drawable/circle"
+                android:padding="8sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call" />
+
+            <View
+                android:id="@+id/line_two"
+                android:layout_width="280dp"
+                android:layout_height="@dimen/line_size"
+                android:layout_below="@id/dr_guardner"
+                android:layout_marginTop="4sp"
+                android:background="@color/sky" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_two"
+                android:text="@string/ems_medicle"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emergency_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guard_layout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/emergency"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_toStartOf="@id/emergency_call"
+                android:layout_toRightOf="@id/emergency"
+                android:text="@string/phone_three"
+                android:textColor="@color/sky"
+                android:textSize="@dimen/standard_margin"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/emergency_call"
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:layout_toEndOf="@id/line_three"
+                android:background="@drawable/circle"
+                android:padding="8sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call" />
+
+            <View
+                android:id="@+id/line_three"
+                android:layout_width="280dp"
+                android:layout_height="@dimen/line_size"
+                android:layout_below="@id/tv_emergency"
+                android:layout_marginTop="4sp"
+                android:background="@color/sky" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_three"
+                android:text="@string/emergency"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ems_protocols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:background="@color/sky"
+            android:text="@string/buttone_text"
+            android:textColor="@color/white" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/guard_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/kauf_layout"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/dr_guardner"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"
-            android:text="@string/dr_guard"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/dr_guardner_no"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30sp"
-            android:text="@string/phone_two"
-            android:textColor="@color/sky"
-            android:layout_toRightOf="@id/dr_guardner"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/dr_guardner_call"
-            android:layout_width="40sp"
-            android:layout_height="40sp"
-            android:src="@drawable/call"
-            android:padding="8sp"
-            android:scaleType="fitXY"
-            android:background="@drawable/circle"
-            android:layout_toRightOf="@id/line_two" />
-
-        <View
-            android:id="@+id/line_two"
-            android:layout_width="280sp"
-            android:layout_height="3dp"
-            android:layout_marginTop="4sp"
-            android:background="@color/sky"
-            android:layout_below="@id/dr_guardner_no"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ems_medicle"
-            android:textSize="12sp"
-            android:layout_below="@id/line_two"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/emergency_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/guard_layout"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/emergency"
-            android:layout_width="100sp"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_emergency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30sp"
-            android:text="@string/phone_three"
-            android:textColor="@color/sky"
-            android:layout_toRightOf="@id/emergency"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/emergency_call"
-            android:layout_width="40sp"
-            android:layout_height="40sp"
-            android:src="@drawable/call"
-            android:padding="8sp"
-            android:scaleType="fitXY"
-            android:background="@drawable/circle"
-            android:layout_toRightOf="@id/line_three" />
-
-        <View
-            android:id="@+id/line_three"
-            android:layout_width="280sp"
-            android:layout_height="3dp"
-            android:layout_marginTop="4sp"
-            android:background="@color/sky"
-            android:layout_below="@id/tv_emergency"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/emergency"
-            android:textSize="12sp"
-            android:layout_below="@id/line_three"/>
-
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/btn_ems_protocols"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/buttone_text"
-        android:layout_alignParentBottom="true"
-        android:background="@color/sky"
-        android:textColor="@color/white"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"/>
-</RelativeLayout>
+</layout>

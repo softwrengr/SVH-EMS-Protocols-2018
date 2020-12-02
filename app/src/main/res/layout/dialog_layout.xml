@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20sp"
-        android:text="Are you sure to call ?"
+        android:text="@string/sure_call"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="normal"
         android:typeface="sans" />
@@ -23,7 +24,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10sp"
-        android:text="Call"
+        android:text="@string/call"
         android:textSize="16sp"
         android:textColor="@color/colorAccent"
         android:textStyle="bold" />
@@ -37,7 +38,7 @@
         android:layout_marginLeft="25sp"
         android:textSize="16sp"
         android:layout_toRightOf="@id/dialog_call"
-        android:text="Close"
+        android:text="close"
         android:textColor="@color/colorAccent"
         android:textStyle="bold" />
 

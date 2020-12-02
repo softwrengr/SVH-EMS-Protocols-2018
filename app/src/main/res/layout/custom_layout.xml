@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/black_boundry"
     android:orientation="vertical"
-    android:padding="3sp">
+    android:padding="@dimen/line_size">
 
     <FrameLayout
         android:layout_width="match_parent"
