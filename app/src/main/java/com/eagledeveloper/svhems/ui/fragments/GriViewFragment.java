@@ -28,8 +28,8 @@ import java.util.ArrayList;
  */
 public class GriViewFragment extends Fragment {
 
-    ArrayList<DataModel> list;
-    GridAdapter adapter;
+    private ArrayList<DataModel> list;
+    private GridAdapter adapter;
 
     private FragmentGriViewBinding binding;
 

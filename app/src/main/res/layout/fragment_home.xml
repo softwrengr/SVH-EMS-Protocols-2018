@@ -11,11 +11,15 @@
 
         <ImageView
             android:id="@+id/ivLogo"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="@dimen/circle_size"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:src="@drawable/logo" />
+            android:src="@drawable/header" />
 
 
         <RelativeLayout
@@ -24,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/ivLogo"
             android:layout_gravity="center"
+            android:layout_marginTop="@dimen/circle_size"
             android:layout_marginLeft="@dimen/standard_margin"
             android:layout_marginRight="@dimen/standard_margin"
             android:orientation="horizontal">
@@ -205,6 +210,7 @@
             android:background="@color/sky"
             android:text="@string/buttone_text"
             android:textColor="@color/white" />
+
     </RelativeLayout>
 
 </layout>

@@ -6,7 +6,7 @@ android {
         applicationId "com.eagledeveloper.svhems"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 4
+        versionCode 7
         versionName "1.2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -23,8 +23,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding true
     }
 }
 
@@ -33,7 +33,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 

@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.eagledeveloper.svhems.R;
@@ -21,10 +23,10 @@ import com.github.barteksc.pdfviewer.listener.OnPageScrollListener;
 import java.util.ArrayList;
 
 public class GridAdapter extends BaseAdapter {
-    ArrayList<DataModel> clientsDetailsModels;
-    Context context;
+    private ArrayList<DataModel> clientsDetailsModels;
+    private Context context;
     private LayoutInflater layoutInflater;
-    MyViewHolder viewHolder = null;
+    private MyViewHolder viewHolder = null;
 
     public GridAdapter(Context context, ArrayList<DataModel> clientsDetailsModels) {
         this.clientsDetailsModels = clientsDetailsModels;
@@ -62,6 +64,9 @@ public class GridAdapter extends BaseAdapter {
 
         viewHolder = new MyViewHolder();
         convertView = layoutInflater.inflate(R.layout.custom_layout, parent, false);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        convertView.setLayoutParams(new GridView.LayoutParams(params));
+
         viewHolder.pdfView = convertView.findViewById(R.id.gv_pdf);
         viewHolder.tvPage = convertView.findViewById(R.id.tv_page);
         viewHolder.tvPageNo = convertView.findViewById(R.id.tv_page_no);
