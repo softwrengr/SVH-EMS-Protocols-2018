@@ -97,7 +97,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
-                android:text="@string/ems_physcian"
+                android:text="@string/dr_guard"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/line_two"
-                android:text="@string/ems_medicle"
+                android:text="@string/board"
                 android:textSize="12sp" />
 
         </RelativeLayout>

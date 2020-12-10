@@ -18,15 +18,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e76f044-e78d-4c3a-8d5e-d27e1c23c023" name="Default" comment="Did changes in home screen">
-      <change afterPath="$PROJECT_DIR$/app/release/app-release 2.aab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/header.png" afterDir="false" />
+    <list default="true" id="6e76f044-e78d-4c3a-8d5e-d27e1c23c023" name="Default" comment="updated for 2021">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eagledeveloper/svhems/adapter/GridAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eagledeveloper/svhems/adapter/GridAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eagledeveloper/svhems/ui/fragments/GriViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eagledeveloper/svhems/ui/fragments/GriViewFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gri_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gri_view.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +42,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[26EBB18415153131]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -258,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606869086408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated for 2021">
+      <created>1607034569772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607034569772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -266,7 +281,8 @@
     <MESSAGE value="almost completed only add a back button in actionbar" />
     <MESSAGE value="all done" />
     <MESSAGE value="Did changes in home screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did changes in home screen" />
+    <MESSAGE value="updated for 2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated for 2021" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="0" key="#Plugins" timestamp="1606863944997">
@@ -281,10 +297,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="225" y="155" key="AndroidCreateResourceFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1606864606106" />
-    <state x="0" y="0" width="1280" height="746" key="CommitChangelistDialog2" timestamp="1606869083887">
+    <state x="0" y="0" width="1280" height="746" key="CommitChangelistDialog2" timestamp="1607034569208">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="0" y="0" width="1280" height="746" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1606869083887" />
+    <state x="0" y="0" width="1280" height="746" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1607034569208" />
     <state width="1228" height="149" key="GridCell.Tab.0.bottom" timestamp="1607030413867">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -301,14 +317,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1228" height="149" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607030413866" />
-    <state x="140" y="77" key="Vcs.Push.Dialog.v2" timestamp="1606869090151">
+    <state x="140" y="77" key="Vcs.Push.Dialog.v2" timestamp="1607034577810">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="140" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606869090151" />
-    <state x="221" y="0" width="838" height="800" key="search.everywhere.popup" timestamp="1607031942572">
+    <state x="140" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607034577810" />
+    <state x="221" y="0" width="838" height="800" key="search.everywhere.popup" timestamp="1607632138772">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="221" y="0" width="838" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1607031942572" />
+    <state x="221" y="0" width="838" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1607632138772" />
   </component>
   <component name="masterDetails">
     <states>

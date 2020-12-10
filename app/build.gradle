@@ -6,7 +6,7 @@ android {
         applicationId "com.eagledeveloper.svhems"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 7
+        versionCode 8
         versionName "1.2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
